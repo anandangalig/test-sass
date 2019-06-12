@@ -1,0 +1,9 @@
+img {
+  @include border-radius(50%);
+}
+
+a.sidebar__link {
+  display: block;
+  text-decoration: none;
+  color: $primary-text-color;
+}
