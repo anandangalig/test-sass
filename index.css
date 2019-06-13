@@ -1,24 +1,128 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-body,
+@import url("https://fonts.googleapis.com/css?family=Hind+Guntur:100,400,700|Roboto:100,400&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons:100,400");
 html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+}
+
+body {
+  margin-left: 10%;
+  margin-right: auto;
+  max-width: 1025px;
   background-color: #242e42;
+}
+
+header {
+  border-bottom: 1px solid #000000;
+  margin-bottom: 1rem;
+}
+
+.sidebar {
+  width: 200px;
   color: #c0c0c0;
   font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.sidebar__header {
+  text-align: center;
 }
 
 img {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
 }
 
-a.sidebar__link {
+#logo {
+  margin-bottom: 1rem;
+  font-family: "Hind Guntur", sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+#logo span {
+  font-weight: 700;
+}
+
+.sidebar__property h3::after {
+  font-family: "Material Icons";
+  font-size: 2rem;
+  content: "arrow_drop_down";
+  vertical-align: middle;
+  padding-right: 1rem;
+  margin-left: 0.5rem;
+  font-size: 20px;
+  color: #1f8efa;
+}
+
+.sidebar__link {
   display: block;
+  padding: 1rem;
+  border-left: 10px solid #242e42;
   text-decoration: none;
   color: #c0c0c0;
+}
+.sidebar__link:hover {
+  -webkit-border-radius: 0 15px 15px 0;
+  -moz-border-radius: 0 15px 15px 0;
+  -ms-border-radius: 0 15px 15px 0;
+  border-radius: 0 15px 15px 0;
+  color: #1f8efa;
+  background-color: #20293c;
+  border-color: #1f8efa;
+}
+
+.overview::before {
+  font-family: "Material Icons";
+  font-size: 2rem;
+  content: "home";
+  vertical-align: middle;
+  padding-right: 1rem;
+}
+
+.devices::before,
+.gallery::before {
+  font-family: "Material Icons";
+  font-size: 2rem;
+  content: "devices";
+  vertical-align: middle;
+  padding-right: 1rem;
+}
+
+.analytics::before {
+  font-family: "Material Icons";
+  font-size: 2rem;
+  content: "bar_chart";
+  vertical-align: middle;
+  padding-right: 1rem;
+}
+
+.rules::before {
+  font-family: "Material Icons";
+  font-size: 2rem;
+  content: "list";
+  vertical-align: middle;
+  padding-right: 1rem;
+}
+
+.history::before {
+  font-family: "Material Icons";
+  font-size: 2rem;
+  content: "replay";
+  vertical-align: middle;
+  padding-right: 1rem;
+}
+
+.settings::before {
+  font-family: "Material Icons";
+  font-size: 2rem;
+  content: "settings";
+  vertical-align: middle;
+  padding-right: 1rem;
 }

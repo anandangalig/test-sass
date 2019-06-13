@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind+Guntur:100,400,700|Roboto:100,400&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons:100,400');
 
 // mixins
 @mixin border-radius($radius) {
@@ -8,7 +9,20 @@
   border-radius: $radius;
 }
 
+@mixin print-icon($name) {
+  font : {
+    family: 'Material Icons';
+    size: 2rem;
+  }
+  content: $name;
+  vertical-align: middle;
+  padding-right: 1rem;
+}
+
 // variables
 $primary-font: 'Roboto', sans-serif;
+$logo-font: 'Hind Guntur', sans-serif;
 $primary-bg-color: #242e42;
+$secondary-bg-color: #20293c;
 $primary-text-color: #c0c0c0;
+$secondary-text-color: #1f8efa;

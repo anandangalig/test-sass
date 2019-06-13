@@ -1,9 +1,64 @@
 img {
-  @include border-radius(50%);
+  @include border-radius(50px);
 }
 
-a.sidebar__link {
+#logo {
+  margin-bottom: 1rem;
+  font-family: $logo-font;
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #ffffff;
+  span {
+    font-weight: 700;
+  }
+}
+
+.sidebar__property {
+  h3::after {
+    @include print-icon('arrow_drop_down');
+    margin-left: 0.5rem;
+    font-size: 20px;
+    color: $secondary-text-color;
+  }
+}
+
+.sidebar__link {
   display: block;
+  padding: 1rem;
+  border-left: 10px solid $primary-bg-color;
   text-decoration: none;
   color: $primary-text-color;
+
+  &:hover {
+    @include border-radius(0 15px 15px 0);
+    color: $secondary-text-color;
+    background-color: $secondary-bg-color;
+    border-color: $secondary-text-color;
+  }
+}
+
+.overview::before {
+  @include print-icon('home');
+}
+
+.devices::before,
+.gallery::before {
+  @include print-icon('devices');
+}
+
+.analytics::before {
+  @include print-icon('bar_chart');
+}
+
+.rules::before {
+  @include print-icon('list');
+}
+
+.history::before {
+  @include print-icon('replay');
+}
+
+.settings::before {
+  @include print-icon('settings');
 }
